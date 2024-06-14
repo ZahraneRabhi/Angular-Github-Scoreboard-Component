@@ -1,0 +1,44 @@
+<h1 class="text-center text-4xl font-bold">GITHUB SCOREBOARD</h1>
+
+<div class="flex justify-center items-center mb-4 mt-16">
+  <div class="stats shadow-lg p-12 w-full max-w-6xl">
+      
+    <div class="stat">
+      <div class="stat-figure text-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#ff52d9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 3v5h5M16 13H8M16 17H8M10 9H8"/></svg>
+      </div>
+      <div class="stat-title">Total Repos</div>
+      <div class="stat-value text-secondary">{{ repositories.length }}</div>
+      <div class="stat-desc">Includes only public repositories</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-figure text-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#7480ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+      </div>
+      <div class="stat-title">Total Commits</div>
+      <div class="stat-value text-primary">{{ commits.length }}</div>
+      <div class="stat-desc">Activity over all repositories</div>
+    </div>
+      
+    <div class="stat">
+      <div class="stat-figure text-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#ff51d8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+      </div>
+      <div class="stat-title">Total Stars</div>
+      <div class="stat-value text-secondary">{{ stargazers.length }}</div>
+      <div class="stat-desc">Across all repositories</div>
+    </div>
+      
+    <div class="stat">
+      <div class="stat-figure text-secondary">
+        <div class="avatar online">
+          <div class="w-16 rounded-full">
+            <img src="{{ avatarUrl }}" alt="Profile Picture" />
+          </div>
+        </div>
+      </div>
+      <div class="stat-title">{{ profileName }}</div>
+    </div>    
+  </div>
+</div>
